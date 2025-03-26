@@ -1,4 +1,4 @@
-module github.com/stainless-sdks/Hanzo-AI-go
+module github.com/hanzoai/go-sdk
 
 go 1.21
 

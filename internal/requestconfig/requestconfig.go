@@ -18,11 +18,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/stainless-sdks/Hanzo-AI-go/internal"
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/apierror"
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/apiform"
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/apiquery"
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/param"
+	"github.com/hanzoai/go-sdk/internal"
+	"github.com/hanzoai/go-sdk/internal/apierror"
+	"github.com/hanzoai/go-sdk/internal/apiform"
+	"github.com/hanzoai/go-sdk/internal/apiquery"
+	"github.com/hanzoai/go-sdk/internal/param"
 )
 
 func getDefaultHeaders() map[string]string {

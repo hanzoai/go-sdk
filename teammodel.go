@@ -6,10 +6,10 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/apijson"
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/param"
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/requestconfig"
-	"github.com/stainless-sdks/Hanzo-AI-go/option"
+	"github.com/hanzoai/go-sdk/internal/apijson"
+	"github.com/hanzoai/go-sdk/internal/param"
+	"github.com/hanzoai/go-sdk/internal/requestconfig"
+	"github.com/hanzoai/go-sdk/option"
 )
 
 // TeamModelService contains methods and other services that help with interacting
