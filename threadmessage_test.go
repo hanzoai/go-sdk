@@ -8,9 +8,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/stainless-sdks/Hanzo-AI-go"
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/testutil"
-	"github.com/stainless-sdks/Hanzo-AI-go/option"
+	"github.com/hanzoai/go-sdk"
+	"github.com/hanzoai/go-sdk/internal/testutil"
+	"github.com/hanzoai/go-sdk/option"
 )
 
 func TestThreadMessageNew(t *testing.T) {
