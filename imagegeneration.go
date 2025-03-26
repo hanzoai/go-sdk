@@ -6,8 +6,8 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/requestconfig"
-	"github.com/stainless-sdks/Hanzo-AI-go/option"
+	"github.com/hanzoai/go-sdk/internal/requestconfig"
+	"github.com/hanzoai/go-sdk/option"
 )
 
 // ImageGenerationService contains methods and other services that help with

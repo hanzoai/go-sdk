@@ -8,12 +8,12 @@ import (
 	"net/url"
 	"reflect"
 
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/apijson"
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/apiquery"
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/param"
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/requestconfig"
-	"github.com/stainless-sdks/Hanzo-AI-go/option"
-	"github.com/stainless-sdks/Hanzo-AI-go/shared"
+	"github.com/hanzoai/go-sdk/internal/apijson"
+	"github.com/hanzoai/go-sdk/internal/apiquery"
+	"github.com/hanzoai/go-sdk/internal/param"
+	"github.com/hanzoai/go-sdk/internal/requestconfig"
+	"github.com/hanzoai/go-sdk/option"
+	"github.com/hanzoai/go-sdk/shared"
 	"github.com/tidwall/gjson"
 )
 
