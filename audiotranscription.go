@@ -9,10 +9,10 @@ import (
 	"mime/multipart"
 	"net/http"
 
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/apiform"
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/param"
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/requestconfig"
-	"github.com/stainless-sdks/Hanzo-AI-go/option"
+	"github.com/hanzoai/go-sdk/internal/apiform"
+	"github.com/hanzoai/go-sdk/internal/param"
+	"github.com/hanzoai/go-sdk/internal/requestconfig"
+	"github.com/hanzoai/go-sdk/option"
 )
 
 // AudioTranscriptionService contains methods and other services that help with

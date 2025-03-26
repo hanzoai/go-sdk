@@ -3,7 +3,7 @@
 package hanzoai
 
 import (
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/apierror"
+	"github.com/hanzoai/go-sdk/internal/apierror"
 )
 
 type Error = apierror.Error

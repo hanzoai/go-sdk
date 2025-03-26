@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/param"
+	"github.com/hanzoai/go-sdk/internal/param"
 )
 
 var encoders sync.Map // map[reflect.Type]encoderFunc
