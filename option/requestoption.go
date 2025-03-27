@@ -234,6 +234,13 @@ func WithEnvironmentProduction() RequestOption {
 	return WithBaseURL("https://api.hanzo.ai/")
 }
 
+// WithEnvironmentSandbox returns a RequestOption that sets the current
+// environment to be the "sandbox" environment. An environment specifies which base URL
+// to use by default.
+func WithEnvironmentSandbox() RequestOption {
+	return WithBaseURL("https://api.sandbox.hanzo.ai/")
+}
+
 // WithAPIKey returns a RequestOption that sets the client setting "api_key".
 func WithAPIKey(value string) RequestOption {
 	return requestconfig.RequestOptionFunc(func(r *requestconfig.RequestConfig) error {

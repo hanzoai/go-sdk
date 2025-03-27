@@ -51,6 +51,7 @@ import (
 func main() {
 	client := hanzoai.NewClient(
 		option.WithAPIKey("My API Key"), // defaults to os.LookupEnv("HANZO_API_KEY")
+		option.WithEnvironmentSandbox(), // defaults to option.WithEnvironmentProduction()
 	)
 	response, err := client.GetHome(context.TODO())
 	if err != nil {
