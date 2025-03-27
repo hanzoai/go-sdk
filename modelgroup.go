@@ -62,7 +62,7 @@ func NewModelGroupService(opts ...option.RequestOption) (r *ModelGroupService) {
 // ```
 //
 // Learn how to use and set wildcard models
-// [here](https://docs.llm.ai/docs/wildcard_routing)
+// [here](https://docs.hanzo.ai/docs/wildcard_routing)
 //
 // Example Response:
 //
