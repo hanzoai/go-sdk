@@ -1,6 +1,6 @@
 # Hanzo Go API Library
 
-<a href="https://pkg.go.dev/github.com/stainless-sdks/Hanzo-AI-go"><img src="https://pkg.go.dev/badge/github.com/stainless-sdks/Hanzo-AI-go.svg" alt="Go Reference"></a>
+<a href="https://pkg.go.dev/github.com/hanzoai/go-sdk"><img src="https://pkg.go.dev/badge/github.com/hanzoai/go-sdk.svg" alt="Go Reference"></a>
 
 The Hanzo Go library provides convenient access to [the Hanzo REST
 API](https://docs.hanzo.ai) from applications written in Go. The full API of this library can be found in [api.md](api.md).
@@ -9,17 +9,25 @@ It is generated with [Stainless](https://www.stainless.com/).
 
 ## Installation
 
+<!-- x-release-please-start-version -->
+
 ```go
 import (
-	"github.com/stainless-sdks/Hanzo-AI-go" // imported as hanzoai
+	"github.com/hanzoai/go-sdk" // imported as hanzoai
 )
 ```
 
+<!-- x-release-please-end -->
+
 Or to pin the version:
 
+<!-- x-release-please-start-version -->
+
 ```sh
-go get -u 'github.com/stainless-sdks/Hanzo-AI-go@v0.0.1-alpha.0'
+go get -u 'github.com/hanzoai/go-sdk@v0.1.0-alpha.1'
 ```
+
+<!-- x-release-please-end -->
 
 ## Requirements
 
@@ -36,8 +44,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/stainless-sdks/Hanzo-AI-go"
-	"github.com/stainless-sdks/Hanzo-AI-go/option"
+	"github.com/hanzoai/go-sdk"
+	"github.com/hanzoai/go-sdk/option"
 )
 
 func main() {
@@ -145,7 +153,7 @@ client.GetHome(context.TODO(), ...,
 )
 ```
 
-See the [full list of request options](https://pkg.go.dev/github.com/stainless-sdks/Hanzo-AI-go/option).
+See the [full list of request options](https://pkg.go.dev/github.com/hanzoai/go-sdk/option).
 
 ### Pagination
 
@@ -360,7 +368,7 @@ This package generally follows [SemVer](https://semver.org/spec/v2.0.0.html) con
 
 We take backwards-compatibility seriously and work hard to ensure you can rely on a smooth upgrade experience.
 
-We are keen for your feedback; please open an [issue](https://www.github.com/stainless-sdks/Hanzo-AI-go/issues) with questions, bugs, or suggestions.
+We are keen for your feedback; please open an [issue](https://www.github.com/hanzoai/go-sdk/issues) with questions, bugs, or suggestions.
 
 ## Contributing
 

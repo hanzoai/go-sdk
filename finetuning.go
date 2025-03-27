@@ -3,7 +3,7 @@
 package hanzoai
 
 import (
-	"github.com/stainless-sdks/Hanzo-AI-go/option"
+	"github.com/hanzoai/go-sdk/option"
 )
 
 // FineTuningService contains methods and other services that help with interacting

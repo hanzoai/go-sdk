@@ -6,9 +6,9 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/apijson"
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/requestconfig"
-	"github.com/stainless-sdks/Hanzo-AI-go/option"
+	"github.com/hanzoai/go-sdk/internal/apijson"
+	"github.com/hanzoai/go-sdk/internal/requestconfig"
+	"github.com/hanzoai/go-sdk/option"
 )
 
 // ProviderService contains methods and other services that help with interacting
@@ -31,7 +31,7 @@ func NewProviderService(opts ...option.RequestOption) (r *ProviderService) {
 }
 
 // Provider Budget Routing - Get Budget, Spend Details
-// https://docs.llm.ai/docs/proxy/provider_budget_routing
+// https://docs.hanzo.ai/docs/proxy/provider_budget_routing
 //
 // Use this endpoint to check current budget, spend and budget reset time for a
 // provider

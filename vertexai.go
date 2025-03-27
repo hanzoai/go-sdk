@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/requestconfig"
-	"github.com/stainless-sdks/Hanzo-AI-go/option"
+	"github.com/hanzoai/go-sdk/internal/requestconfig"
+	"github.com/hanzoai/go-sdk/option"
 )
 
 // VertexAIService contains methods and other services that help with interacting
@@ -33,7 +33,7 @@ func NewVertexAIService(opts ...option.RequestOption) (r *VertexAIService) {
 
 // Call LLM proxy via Vertex AI SDK.
 //
-// [Docs](https://docs.llm.ai/docs/pass_through/vertex_ai)
+// [Docs](https://docs.hanzo.ai/docs/pass_through/vertex_ai)
 func (r *VertexAIService) New(ctx context.Context, endpoint string, opts ...option.RequestOption) (res *VertexAINewResponse, err error) {
 	opts = append(r.Options[:], opts...)
 	if endpoint == "" {
@@ -47,7 +47,7 @@ func (r *VertexAIService) New(ctx context.Context, endpoint string, opts ...opti
 
 // Call LLM proxy via Vertex AI SDK.
 //
-// [Docs](https://docs.llm.ai/docs/pass_through/vertex_ai)
+// [Docs](https://docs.hanzo.ai/docs/pass_through/vertex_ai)
 func (r *VertexAIService) Get(ctx context.Context, endpoint string, opts ...option.RequestOption) (res *VertexAIGetResponse, err error) {
 	opts = append(r.Options[:], opts...)
 	if endpoint == "" {
@@ -61,7 +61,7 @@ func (r *VertexAIService) Get(ctx context.Context, endpoint string, opts ...opti
 
 // Call LLM proxy via Vertex AI SDK.
 //
-// [Docs](https://docs.llm.ai/docs/pass_through/vertex_ai)
+// [Docs](https://docs.hanzo.ai/docs/pass_through/vertex_ai)
 func (r *VertexAIService) Update(ctx context.Context, endpoint string, opts ...option.RequestOption) (res *VertexAIUpdateResponse, err error) {
 	opts = append(r.Options[:], opts...)
 	if endpoint == "" {
@@ -75,7 +75,7 @@ func (r *VertexAIService) Update(ctx context.Context, endpoint string, opts ...o
 
 // Call LLM proxy via Vertex AI SDK.
 //
-// [Docs](https://docs.llm.ai/docs/pass_through/vertex_ai)
+// [Docs](https://docs.hanzo.ai/docs/pass_through/vertex_ai)
 func (r *VertexAIService) Delete(ctx context.Context, endpoint string, opts ...option.RequestOption) (res *VertexAIDeleteResponse, err error) {
 	opts = append(r.Options[:], opts...)
 	if endpoint == "" {
@@ -89,7 +89,7 @@ func (r *VertexAIService) Delete(ctx context.Context, endpoint string, opts ...o
 
 // Call LLM proxy via Vertex AI SDK.
 //
-// [Docs](https://docs.llm.ai/docs/pass_through/vertex_ai)
+// [Docs](https://docs.hanzo.ai/docs/pass_through/vertex_ai)
 func (r *VertexAIService) Patch(ctx context.Context, endpoint string, opts ...option.RequestOption) (res *VertexAIPatchResponse, err error) {
 	opts = append(r.Options[:], opts...)
 	if endpoint == "" {

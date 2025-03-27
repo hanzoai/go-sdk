@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/apijson"
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/param"
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/requestconfig"
-	"github.com/stainless-sdks/Hanzo-AI-go/option"
+	"github.com/hanzoai/go-sdk/internal/apijson"
+	"github.com/hanzoai/go-sdk/internal/param"
+	"github.com/hanzoai/go-sdk/internal/requestconfig"
+	"github.com/hanzoai/go-sdk/option"
 )
 
 // OrganizationService contains methods and other services that help with
@@ -69,7 +69,7 @@ func NewOrganizationService(opts ...option.RequestOption) (r *OrganizationServic
 //   - organization_id: _Optional[str]_ - The organization id of the team. Default is
 //     None. Create via `/organization/new`.
 //   - model_aliases: Optional[dict] - Model aliases for the team.
-//     [Docs](https://docs.llm.ai/docs/proxy/team_based_routing#create-team-with-model-alias)
+//     [Docs](https://docs.hanzo.ai/docs/proxy/team_based_routing#create-team-with-model-alias)
 //
 // Case 1: Create new org **without** a budget_id
 //

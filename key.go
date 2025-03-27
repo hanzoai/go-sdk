@@ -11,12 +11,12 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/apijson"
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/apiquery"
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/param"
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/requestconfig"
-	"github.com/stainless-sdks/Hanzo-AI-go/option"
-	"github.com/stainless-sdks/Hanzo-AI-go/shared"
+	"github.com/hanzoai/go-sdk/internal/apijson"
+	"github.com/hanzoai/go-sdk/internal/apiquery"
+	"github.com/hanzoai/go-sdk/internal/param"
+	"github.com/hanzoai/go-sdk/internal/requestconfig"
+	"github.com/hanzoai/go-sdk/option"
+	"github.com/hanzoai/go-sdk/shared"
 	"github.com/tidwall/gjson"
 )
 
@@ -55,7 +55,7 @@ func NewKeyService(opts ...option.RequestOption) (r *KeyService) {
 //   - tags: Optional[List[str]] - Tags for organizing keys (Enterprise only)
 //   - enforced_params: Optional[List[str]] - List of enforced params for the key
 //     (Enterprise only).
-//     [Docs](https://docs.llm.ai/docs/proxy/enterprise#enforce-required-params-for-llm-requests)
+//     [Docs](https://docs.hanzo.ai/docs/proxy/enterprise#enforce-required-params-for-llm-requests)
 //   - spend: Optional[float] - Amount spent by key
 //   - max_budget: Optional[float] - Max budget for key
 //   - model_max_budget: Optional[Dict[str, BudgetConfig]] - Model-specific budgets
@@ -238,7 +238,7 @@ func (r *KeyService) CheckHealth(ctx context.Context, opts ...option.RequestOpti
 
 // Generate an API key based on the provided data.
 //
-// Docs: https://docs.llm.ai/docs/proxy/virtual_keys
+// Docs: https://docs.hanzo.ai/docs/proxy/virtual_keys
 //
 // Parameters:
 //
@@ -256,12 +256,12 @@ func (r *KeyService) CheckHealth(ctx context.Context, opts ...option.RequestOpti
 //     key is allowed to call all models)
 //   - aliases: Optional[dict] - Any alias mappings, on top of anything in the
 //     config.yaml model list. -
-//     https://docs.llm.ai/docs/proxy/virtual_keys#managing-auth---upgradedowngrade-models
+//     https://docs.hanzo.ai/docs/proxy/virtual_keys#managing-auth---upgradedowngrade-models
 //   - config: Optional[dict] - any key-specific configs, overrides config in
 //     config.yaml
 //   - spend: Optional[int] - Amount spent by key. Default is 0. Will be updated by
 //     proxy whenever key is used.
-//     https://docs.llm.ai/docs/proxy/virtual_keys#managing-auth---tracking-spend
+//     https://docs.hanzo.ai/docs/proxy/virtual_keys#managing-auth---tracking-spend
 //   - send_invite_email: Optional[bool] - Whether to send an invite email to the
 //     user_id, with the generate key
 //   - max_budget: Optional[float] - Specify max budget for a given key.
@@ -287,7 +287,7 @@ func (r *KeyService) CheckHealth(ctx context.Context, opts ...option.RequestOpti
 //     specific tpm limit.
 //   - allowed_cache_controls: Optional[list] - List of allowed cache control values.
 //     Example - ["no-cache", "no-store"]. See all values -
-//     https://docs.llm.ai/docs/proxy/caching#turn-on--off-caching-per-request
+//     https://docs.hanzo.ai/docs/proxy/caching#turn-on--off-caching-per-request
 //   - blocked: Optional[bool] - Whether the key is blocked.
 //   - rpm_limit: Optional[int] - Specify rpm limit for a given key (Requests per
 //     minute)
@@ -301,7 +301,7 @@ func (r *KeyService) CheckHealth(ctx context.Context, opts ...option.RequestOpti
 //     [tag-based routing](https://llm.vercel.app/docs/proxy/tag_routing).
 //   - enforced_params: Optional[List[str]] - List of enforced params for the key
 //     (Enterprise only).
-//     [Docs](https://docs.llm.ai/docs/proxy/enterprise#enforce-required-params-for-llm-requests)
+//     [Docs](https://docs.hanzo.ai/docs/proxy/enterprise#enforce-required-params-for-llm-requests)
 //
 // Examples:
 //
