@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/requestconfig"
-	"github.com/stainless-sdks/Hanzo-AI-go/option"
+	"github.com/hanzoai/go-sdk/internal/requestconfig"
+	"github.com/hanzoai/go-sdk/option"
 )
 
 // CohereService contains methods and other services that help with interacting
@@ -31,7 +31,7 @@ func NewCohereService(opts ...option.RequestOption) (r *CohereService) {
 	return
 }
 
-// [Docs](https://docs.llm.ai/docs/pass_through/cohere)
+// [Docs](https://docs.hanzo.ai/docs/pass_through/cohere)
 func (r *CohereService) New(ctx context.Context, endpoint string, opts ...option.RequestOption) (res *CohereNewResponse, err error) {
 	opts = append(r.Options[:], opts...)
 	if endpoint == "" {
@@ -43,7 +43,7 @@ func (r *CohereService) New(ctx context.Context, endpoint string, opts ...option
 	return
 }
 
-// [Docs](https://docs.llm.ai/docs/pass_through/cohere)
+// [Docs](https://docs.hanzo.ai/docs/pass_through/cohere)
 func (r *CohereService) Get(ctx context.Context, endpoint string, opts ...option.RequestOption) (res *CohereGetResponse, err error) {
 	opts = append(r.Options[:], opts...)
 	if endpoint == "" {
@@ -55,7 +55,7 @@ func (r *CohereService) Get(ctx context.Context, endpoint string, opts ...option
 	return
 }
 
-// [Docs](https://docs.llm.ai/docs/pass_through/cohere)
+// [Docs](https://docs.hanzo.ai/docs/pass_through/cohere)
 func (r *CohereService) Update(ctx context.Context, endpoint string, opts ...option.RequestOption) (res *CohereUpdateResponse, err error) {
 	opts = append(r.Options[:], opts...)
 	if endpoint == "" {
@@ -67,7 +67,7 @@ func (r *CohereService) Update(ctx context.Context, endpoint string, opts ...opt
 	return
 }
 
-// [Docs](https://docs.llm.ai/docs/pass_through/cohere)
+// [Docs](https://docs.hanzo.ai/docs/pass_through/cohere)
 func (r *CohereService) Delete(ctx context.Context, endpoint string, opts ...option.RequestOption) (res *CohereDeleteResponse, err error) {
 	opts = append(r.Options[:], opts...)
 	if endpoint == "" {
@@ -79,7 +79,7 @@ func (r *CohereService) Delete(ctx context.Context, endpoint string, opts ...opt
 	return
 }
 
-// [Docs](https://docs.llm.ai/docs/pass_through/cohere)
+// [Docs](https://docs.hanzo.ai/docs/pass_through/cohere)
 func (r *CohereService) Modify(ctx context.Context, endpoint string, opts ...option.RequestOption) (res *CohereModifyResponse, err error) {
 	opts = append(r.Options[:], opts...)
 	if endpoint == "" {

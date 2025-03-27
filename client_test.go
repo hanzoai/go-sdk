@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stainless-sdks/Hanzo-AI-go"
-	"github.com/stainless-sdks/Hanzo-AI-go/internal"
-	"github.com/stainless-sdks/Hanzo-AI-go/option"
+	"github.com/hanzoai/go-sdk"
+	"github.com/hanzoai/go-sdk/internal"
+	"github.com/hanzoai/go-sdk/option"
 )
 
 type closureTransport struct {

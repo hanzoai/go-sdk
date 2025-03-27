@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/requestconfig"
-	"github.com/stainless-sdks/Hanzo-AI-go/option"
+	"github.com/hanzoai/go-sdk/internal/requestconfig"
+	"github.com/hanzoai/go-sdk/option"
 )
 
 // BedrockService contains methods and other services that help with interacting
@@ -31,7 +31,7 @@ func NewBedrockService(opts ...option.RequestOption) (r *BedrockService) {
 	return
 }
 
-// [Docs](https://docs.llm.ai/docs/pass_through/bedrock)
+// [Docs](https://docs.hanzo.ai/docs/pass_through/bedrock)
 func (r *BedrockService) New(ctx context.Context, endpoint string, opts ...option.RequestOption) (res *BedrockNewResponse, err error) {
 	opts = append(r.Options[:], opts...)
 	if endpoint == "" {
@@ -43,7 +43,7 @@ func (r *BedrockService) New(ctx context.Context, endpoint string, opts ...optio
 	return
 }
 
-// [Docs](https://docs.llm.ai/docs/pass_through/bedrock)
+// [Docs](https://docs.hanzo.ai/docs/pass_through/bedrock)
 func (r *BedrockService) Get(ctx context.Context, endpoint string, opts ...option.RequestOption) (res *BedrockGetResponse, err error) {
 	opts = append(r.Options[:], opts...)
 	if endpoint == "" {
@@ -55,7 +55,7 @@ func (r *BedrockService) Get(ctx context.Context, endpoint string, opts ...optio
 	return
 }
 
-// [Docs](https://docs.llm.ai/docs/pass_through/bedrock)
+// [Docs](https://docs.hanzo.ai/docs/pass_through/bedrock)
 func (r *BedrockService) Update(ctx context.Context, endpoint string, opts ...option.RequestOption) (res *BedrockUpdateResponse, err error) {
 	opts = append(r.Options[:], opts...)
 	if endpoint == "" {
@@ -67,7 +67,7 @@ func (r *BedrockService) Update(ctx context.Context, endpoint string, opts ...op
 	return
 }
 
-// [Docs](https://docs.llm.ai/docs/pass_through/bedrock)
+// [Docs](https://docs.hanzo.ai/docs/pass_through/bedrock)
 func (r *BedrockService) Delete(ctx context.Context, endpoint string, opts ...option.RequestOption) (res *BedrockDeleteResponse, err error) {
 	opts = append(r.Options[:], opts...)
 	if endpoint == "" {
@@ -79,7 +79,7 @@ func (r *BedrockService) Delete(ctx context.Context, endpoint string, opts ...op
 	return
 }
 
-// [Docs](https://docs.llm.ai/docs/pass_through/bedrock)
+// [Docs](https://docs.hanzo.ai/docs/pass_through/bedrock)
 func (r *BedrockService) Patch(ctx context.Context, endpoint string, opts ...option.RequestOption) (res *BedrockPatchResponse, err error) {
 	opts = append(r.Options[:], opts...)
 	if endpoint == "" {

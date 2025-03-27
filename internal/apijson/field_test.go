@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/param"
+	"github.com/hanzoai/go-sdk/internal/param"
 )
 
 type Struct struct {

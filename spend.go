@@ -8,12 +8,12 @@ import (
 	"net/url"
 	"reflect"
 
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/apijson"
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/apiquery"
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/param"
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/requestconfig"
-	"github.com/stainless-sdks/Hanzo-AI-go/option"
-	"github.com/stainless-sdks/Hanzo-AI-go/shared"
+	"github.com/hanzoai/go-sdk/internal/apijson"
+	"github.com/hanzoai/go-sdk/internal/apiquery"
+	"github.com/hanzoai/go-sdk/internal/param"
+	"github.com/hanzoai/go-sdk/internal/requestconfig"
+	"github.com/hanzoai/go-sdk/option"
+	"github.com/hanzoai/go-sdk/shared"
 	"github.com/tidwall/gjson"
 )
 
@@ -41,7 +41,7 @@ func NewSpendService(opts ...option.RequestOption) (r *SpendService) {
 // Calculate spend **before** making call:
 //
 // Note: If you see a spend of $0.0 you need to set custom_pricing for your model:
-// https://docs.llm.ai/docs/proxy/custom_pricing
+// https://docs.hanzo.ai/docs/proxy/custom_pricing
 //
 // ```
 // curl --location 'http://localhost:4000/spend/calculate'

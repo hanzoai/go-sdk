@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"net/http/httputil"
 
-	"github.com/stainless-sdks/Hanzo-AI-go/internal/apijson"
+	"github.com/hanzoai/go-sdk/internal/apijson"
 )
 
 // Error represents an error that originates from the API, i.e. when a request is
