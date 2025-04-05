@@ -6,7 +6,6 @@ import (
 	"bytes"
 	"fmt"
 	"io"
-	"log"
 	"net/http"
 	"net/url"
 	"strings"
@@ -28,10 +27,11 @@ type RequestOption = requestconfig.RequestOption
 // For security reasons, ensure that the base URL is trusted.
 func WithBaseURL(base string) RequestOption {
 	u, err := url.Parse(base)
-	if err != nil {
-		log.Fatalf("failed to parse BaseURL: %s\n", err)
-	}
 	return requestconfig.RequestOptionFunc(func(r *requestconfig.RequestConfig) error {
+		if err != nil {
+			return fmt.Errorf("requestoption: WithBaseURL failed to parse url %s\n", err)
+		}
+
 		if u.Path != "" && !strings.HasSuffix(u.Path, "/") {
 			u.Path += "/"
 		}
@@ -232,6 +232,13 @@ func WithRequestTimeout(dur time.Duration) RequestOption {
 // to use by default.
 func WithEnvironmentProduction() RequestOption {
 	return WithBaseURL("https://api.hanzo.ai/")
+}
+
+// WithEnvironmentSandbox returns a RequestOption that sets the current
+// environment to be the "sandbox" environment. An environment specifies which base URL
+// to use by default.
+func WithEnvironmentSandbox() RequestOption {
+	return WithBaseURL("https://api.sandbox.hanzo.ai/")
 }
 
 // WithAPIKey returns a RequestOption that sets the client setting "api_key".

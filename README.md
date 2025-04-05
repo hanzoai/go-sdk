@@ -24,7 +24,7 @@ Or to pin the version:
 <!-- x-release-please-start-version -->
 
 ```sh
-go get -u 'github.com/hanzoai/go-sdk@v0.1.0-alpha.1'
+go get -u 'github.com/hanzoai/go-sdk@v0.1.0-alpha.2'
 ```
 
 <!-- x-release-please-end -->
@@ -51,6 +51,7 @@ import (
 func main() {
 	client := hanzoai.NewClient(
 		option.WithAPIKey("My API Key"), // defaults to os.LookupEnv("HANZO_API_KEY")
+		option.WithEnvironmentSandbox(), // defaults to option.WithEnvironmentProduction()
 	)
 	response, err := client.GetHome(context.TODO())
 	if err != nil {
