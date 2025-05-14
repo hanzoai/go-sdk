@@ -262,14 +262,14 @@ func WithRequestTimeout(dur time.Duration) RequestOption {
 // environment to be the "production" environment. An environment specifies which base URL
 // to use by default.
 func WithEnvironmentProduction() RequestOption {
-	return WithBaseURL("https://api.hanzo.ai/")
+	return requestconfig.WithDefaultBaseURL("https://api.hanzo.ai/")
 }
 
 // WithEnvironmentSandbox returns a RequestOption that sets the current
 // environment to be the "sandbox" environment. An environment specifies which base URL
 // to use by default.
 func WithEnvironmentSandbox() RequestOption {
-	return WithBaseURL("https://api.sandbox.hanzo.ai/")
+	return requestconfig.WithDefaultBaseURL("https://api.sandbox.hanzo.ai/")
 }
 
 // WithAPIKey returns a RequestOption that sets the client setting "api_key".
