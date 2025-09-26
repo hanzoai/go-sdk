@@ -24,14 +24,14 @@ Or to pin the version:
 <!-- x-release-please-start-version -->
 
 ```sh
-go get -u 'github.com/hanzoai/go-sdk@v0.1.0-alpha.3'
+go get -u 'github.com/hanzoai/go-sdk@v0.1.0-alpha.4'
 ```
 
 <!-- x-release-please-end -->
 
 ## Requirements
 
-This library requires Go 1.18+.
+This library requires Go 1.22+.
 
 ## Usage
 
