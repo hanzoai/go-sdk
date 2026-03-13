@@ -1,5 +1,42 @@
 # Changelog
 
+## 0.1.0-alpha.5 (2026-03-13)
+
+Full Changelog: [v0.1.0-alpha.4...v0.1.0-alpha.5](https://github.com/hanzoai/go-sdk/compare/v0.1.0-alpha.4...v0.1.0-alpha.5)
+
+### Features
+
+* **api:** api update ([13c4326](https://github.com/hanzoai/go-sdk/commit/13c4326777789f8d0b128da67463b765db2880ec))
+
+
+### Bug Fixes
+
+* allow canceling a request while it is waiting to retry ([412a254](https://github.com/hanzoai/go-sdk/commit/412a254721caffc54a08f9198a7159c3f439bc07))
+* **client:** use correct format specifier for header serialization ([12b46c1](https://github.com/hanzoai/go-sdk/commit/12b46c1dd383803637533ae962baf17e3cfc598e))
+* correct test assertions for service Options and BaseURL ([5d2f80e](https://github.com/hanzoai/go-sdk/commit/5d2f80ed7087b3398e0045395bd75fdc9f64ca8f))
+* fix for namespace collisions with client and resource test methods ([04c6c39](https://github.com/hanzoai/go-sdk/commit/04c6c398913b15da218ef4087864831508dcfbf5))
+* remove nil Options assertion when no opts passed ([dae317e](https://github.com/hanzoai/go-sdk/commit/dae317efdfddadcc4937abb0b30321d37203dab3))
+
+
+### Chores
+
+* **ci:** skip uploading artifacts on stainless-internal branches ([b31e9e0](https://github.com/hanzoai/go-sdk/commit/b31e9e00787cd1b1ed266a4783b0349aa2b140c8))
+* **internal:** codegen related update ([f4af05d](https://github.com/hanzoai/go-sdk/commit/f4af05db5a76af294af9ac0f2265fbac79e2bcb1))
+* **internal:** codegen related update ([f974f78](https://github.com/hanzoai/go-sdk/commit/f974f78d755176bdd069945948bec88fa19993c9))
+* **internal:** minor cleanup ([a991c3e](https://github.com/hanzoai/go-sdk/commit/a991c3e2fcd759e320a1a34532404e7dc4016c05))
+* **internal:** move custom custom `json` tags to `api` ([e0d573b](https://github.com/hanzoai/go-sdk/commit/e0d573bd1dce8e81e8bead12d13fd1b3920b75a6))
+* **internal:** remove mock server code ([7ac9bd6](https://github.com/hanzoai/go-sdk/commit/7ac9bd6d92948923585bceefb558918d2a24ae37))
+* **internal:** use explicit returns ([5dab23d](https://github.com/hanzoai/go-sdk/commit/5dab23da630dcb8333afea9c544cf1d6b080804f))
+* **internal:** use explicit returns in more places ([905da44](https://github.com/hanzoai/go-sdk/commit/905da44f237f9153af03f0e9c02291f3b9bb631f))
+* update Go toolchain to 1.26 ([813c7ad](https://github.com/hanzoai/go-sdk/commit/813c7ad26dda56fdd99c39171e97f0a3040f5702))
+* update mock server docs ([1e00e6f](https://github.com/hanzoai/go-sdk/commit/1e00e6f84daaf0884a331052ea6bba98accb813c))
+* update placeholder string ([602d8a2](https://github.com/hanzoai/go-sdk/commit/602d8a255ea344aa5eb329b32ce782ee89f7ea34))
+
+
+### Documentation
+
+* add LLM.md project guide ([9b4d0c4](https://github.com/hanzoai/go-sdk/commit/9b4d0c495e183f851f1f87ac78ac9a908a34e6de))
+
 ## 0.1.0-alpha.4 (2026-01-28)
 
 Full Changelog: [v0.1.0-alpha.3...v0.1.0-alpha.4](https://github.com/hanzoai/go-sdk/compare/v0.1.0-alpha.3...v0.1.0-alpha.4)
