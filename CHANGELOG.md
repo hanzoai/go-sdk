@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.1.0-alpha.6 (2026-07-05)
+
+Full Changelog: [v0.1.0-alpha.5...v0.1.0-alpha.6](https://github.com/hanzoai/go-sdk/compare/v0.1.0-alpha.5...v0.1.0-alpha.6)
+
+### Features
+
+* regenerate SDK from unified OpenAPI spec (retire Stainless) ([#15](https://github.com/hanzoai/go-sdk/issues/15)) ([3e1b9d4](https://github.com/hanzoai/go-sdk/commit/3e1b9d46954732686667895eeff13587c6c9bb9b))
+
+
+### Chores
+
+* sync repo ([c378d3b](https://github.com/hanzoai/go-sdk/commit/c378d3bf9382c04c06b1eceebb15fdb9157b9731))
+
 ## 0.1.0-alpha.5 (2026-05-13)
 
 Full Changelog: [v0.1.0-alpha.4...v0.1.0-alpha.5](https://github.com/hanzoai/go-sdk/compare/v0.1.0-alpha.4...v0.1.0-alpha.5)
